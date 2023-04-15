@@ -1,0 +1,140 @@
+/*GENERALIDADES*/
+
+:root{
+    --fuente1: 'Pacifico',cursive;
+    --grisClaro: rgba(192,192,192,0.5);
+    --azul:rgb(99, 157, 191);
+    --blanco:rgb(255, 255, 255);
+    --verde: rgb(11, 186, 38);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: var(--grisClaro);
+    width:100%;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+*,*:before, *::after{
+    box-sizing: inherit;
+}
+
+
+h1{
+    font-size: 4.8rem;
+    text-align: center;
+    color: var(--blanco);
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-size: 16px;
+    background-image:url(huellas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo1{
+    padding-top: 3rem;
+
+}
+.boton{
+    background-color: var(--azul);
+    color: black;
+    padding: 1rem;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: 90%;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin: 1.2rem auto;
+}
+.contenedor_formulario , .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario , .contenedor_info{
+    background-color: var(--grisClaro);
+    width:min(60rem,100%);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+
+}
+
+legend{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
+@media (min-width:768px) {
+    .formulario_contenedor_campos , .contenedor_campos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 1rem;
+    }
+}
+
+.campo{
+    margin: 1rem;
+}
+.campo_label{
+    color:black;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display:block;
+    font-size: 2rem;
+}
+
+.campo_field , .campo_info{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+}
+.campo_info{
+    background-color: var(--blanco);
+}
+.w-sm-100{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-centro{
+    padding: 3rem;
+    justify-content: center;
+}
+
+@media (min-width:760px){
+    .boton{
+        width:50%;
+        border:none;
+    }
+}
+
+.boton:hover{
+    background-color:var(--verde) ;
+    transition: 1s;
+}

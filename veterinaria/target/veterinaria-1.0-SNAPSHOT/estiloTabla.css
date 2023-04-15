@@ -1,0 +1,155 @@
+/*GENERALIDADES*/
+
+:root{
+  --fuente1: 'Pacifico',cursive;
+  --grisClaro: rgba(192,192,192,0.5);
+  --azul:rgb(99, 157, 191);
+  --blanco:rgb(255, 255, 255);
+  --verde: rgb(11, 186, 38);
+  --morado: rgba(146, 27, 175, 0.3);
+  --negro: rgb(0, 0, 0);
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: var(--grisClaro);
+  width:100%;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+*,*:before, *::after{
+  box-sizing: inherit;
+}
+
+
+a{
+  text-decoration: none;
+  color:var(--negro);
+}
+
+img{
+  max-width: 50%;
+}
+
+body{
+  font-size: 16px;
+  background-image:url(huellas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boton{
+  background-color: var(--azul);
+  color: black;
+  padding: 1rem;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 1rem;
+  width: 90%;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin: 1.2rem auto;
+}
+.contenedor_formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(100%);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px groove red;
+  text-align: center;
+  background-color:var(--blanco);
+}
+@media(min-width:768px) {
+  table{
+    width: 80%
+  };
+}
+
+
+thead th:nth-child(1) {
+  width: 6%;
+}
+
+thead th:nth-child(2) {
+  width: 12.5%;
+}
+
+thead th:nth-child(3) {
+  width: 12.5%;
+}
+
+thead th:nth-child(4) {
+  width: 12.5%;
+}
+thead th:nth-child(5) {
+  width: 10%;
+}
+thead th:nth-child(6) {
+  width: 12.5%;
+}
+thead th:nth-child(7) {
+  width: 13%;
+}
+thead th:nth-child(8) {
+  width: 10%;
+}
+/*
+th, td {
+  padding: 1rem;
+}
+*/
+h1 {
+font-family: 'Rock Salt', cursive;
+padding: 20px;
+font-style: italic;
+caption-side: bottom;
+color: #000000;
+text-align: center;
+letter-spacing: 1px;
+}
+tfoot{
+  width: 100%;
+  text-align: center;
+  
+}
+tfoot th {
+  text-align: right;
+}
+.tfoot_td{
+  text-align: left;
+  padding: 2rem;
+}
+
+.boton_img{
+  width: 30%;
+  height: 30%;
+}
+
+.contenedor_boton{
+  margin: auto;
+  display:flex;
+}
+
+@media (min-width:768px) {
+  .boton{
+    width: 25%;
+  }
+}
+
+
+
+
+
